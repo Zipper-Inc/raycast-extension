@@ -1,9 +1,9 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "zipper-run",
-  "title": "Zipper run",
-  "description": "",
-  "icon": "command-icon.png",
+  "title": "Run Zipper Applet",
+  "description": "Run a zipper applet",
+  "icon": "zipper-icon.png",
   "author": "ariel_conti",
   "owner": "zipper",
   "license": "MIT",
@@ -12,11 +12,29 @@
       "name": "index",
       "title": "Run applet",
       "description": "Run applet on zipper",
-      "mode": "view"
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "appletName",
+          "type": "text",
+          "placeholder": "Crontab generator",
+          "description": "The name of the applet to run",
+          "required": true
+        },
+        {
+          "name": "scriptName",
+          "type": "text",
+          "placeholder": "main.ts",
+          "description": "The name of the script to run",
+          "required": true
+        }
+      ]
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.60.1"
+    "@raycast/api": "^1.60.1",
+    "@raycast/utils": "^1.10.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.6",

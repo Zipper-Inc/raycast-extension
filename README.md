@@ -1,4 +1,5 @@
 # Raycast Extension for Zipper.dev Applets
+
 This extension allows Raycast users to execute applets from Zipper.dev directly through Raycast.
 
 ## Features
@@ -21,3 +22,10 @@ To use the extension, follow these steps:
 ## Example
 
 To run the `zipper-dex` applet with the `main.ts` script:
+![Running Zipper Dex](metadata/zipper-run.png)
+
+Fill the inputs
+![Filling Inputs](metadata/zipper-run-1.png)
+
+See the results!
+![Applet Results](metadata/zipper-run-2.png)
